@@ -372,44 +372,61 @@ function showDialogMarket() {
     _0x5331ad.innerHTML = "\n        <div class=\"botoes\" style=\"display: flex\"><input button class=\"btn evt-confirm-btn btn-confirm-no\" type=\"button\" id=\"iniciar\" value=\"Script Desativado\" title=\"Clique para ativar ou desativar as negociações.\"></input>\n        <input button class=\"btn evt-confirm-btn btn-confirm-no\" type=\"button\" id=\"option\" value=\"Sem modo definido\"   title=\"Clique para ativar modo automático de negociação ou valor definido por você.\"</input>\n        <input button class=\"btn evt-confirm-btn btn-confirm-no\" type=\"button\" id=\"vender\" value=\"Vendas desabilitadas\"  title=\"Clique para ativar ou desativar a venda de recursos.\"</input>\n        <input button class=\"btn evt-confirm-btn btn-confirm-yes\" type=\"button\" id=\"salvar\" value=\"Salvar Configuração\"  title=\"Salvar as configurações.\"></input></div>\n\n        <div class=\"buysell\">\n        <div class=\"buy\">\n        <div class=\"container\">\n            <label>\n                <div class=\"align-items\">\n                    Taxa Madeira\n                    <input class=\"inputbuy\" type=\"number\" id=\"buywood\" maxlength=\"3\" min=\"64\" value=\"\" title=\"Escolha a taxa desejada para comprar Madeira.\">\n                </div>\n            </label>\n            <label>\n                <div class=\"align-items\">\n                    Taxa Argila\n                    <input class=\"inputbuy\" type=\"number\" id=\"buystone\" maxlength=\"3\" min=\"64\" value=\"\" title=\"Escolha a taxa desejada para comprar Argila.\">\n                </div>\n            </label>\n            <label>\n                <div class=\"align-items\">\n                    Taxa Ferro\n                    <input class=\"inputbuy\" type=\"number\" id=\"buyiron\" maxlength=\"3\" min=\"64\" value=\"\" title=\"Escolha a taxa desejada para comprar Ferro.\">\n                </div>\n            </label>\n            <label>\n                <div class=\"align-items\">\n                    Compra por vez\n                    <input class=\"inputbuy\" type=\"number\" id=\"maxstorage\" maxlength=\"4\" min=\"0\" value=\"\" title=\"Escolha a quantidade máxima por compra\">\n                </div>\n            </label>\n            <label>\n                <div class=\"align-items\">\n                    Limite armazém\n                    <input class=\"inputbuy\" type=\"number\" id=\"limiteStorage\" maxlength=\"4\" min=\"0\" value=\"\" title=\"Escolha o limite de recursos para comprar em relação ao que tem na aldeia e o que tem chegando.\">\n                </div>\n            </label>\n        </div>\n        </div>\n    </div>\n\n        </div><div class=\"sell\"<br>\n\n        <div class=\"container\">\n        <label>\n            <div class=\"align-items\">\n                Taxa Madeira\n                <input class=\"inputsell\" type=\"number\" id=\"sellwood\" maxlength=\"3\" min=\"64\" value=\"\" title=\"Escolha a taxa desejada para vender Madeira.\">\n            </div>\n        </label>\n        <label>\n            <div class=\"align-items\">\n                Taxa Argila\n                <input class=\"inputsell\" type=\"number\" id=\"sellstone\" maxlength=\"3\" min=\"64\" value=\"\" title=\"Escolha a taxa desejada para vender Argila.\">\n            </div>\n        </label>\n        <label>\n            <div class=\"align-items\">\n                Taxa Ferro\n                <input class=\"inputsell\" type=\"number\" id=\"selliron\" maxlength=\"3\" min=\"64\" value=\"\" title=\"Escolha a taxa desejada para vender Ferro.\">\n            </div>\n        </label>\n        <br>\n        <label>\n            <div class=\"align-items\">\n                Reservar\n                <input class=\"inputsell\" type=\"number\" id=\"reserveWood\" maxlength=\"3\" min=\"0\" max=\"100\" value=\"\" title=\"Escolha a quantidade que deseja reservar de madeira\">\n            </div>\n        </label>\n        <label>\n            <div class=\"align-items\">\n                Reservar\n                <input class=\"inputsell\" type=\"number\" id=\"reserveStone\" maxlength=\"3\" min=\"0\" max=\"100\" value=\"\" title=\"Escolha a quantidade que deseja reservar de argila\">\n            </div>\n        </label>\n        <label>\n            <div class=\"align-items\">\n                Reservar\n                <input class=\"inputsell\" type=\"number\" id=\"reserveIron\" maxlength=\"3\" min=\"0\" max=\"100\" value=\"\" title=\"Escolha a quantidade que deseja reservar de ferro\">\n            </div>\n        </label>\n        <label>\n            <div class=\"align-items\">\n                Limite de venda\n                <input class=\"inputsell\" type=\"number\" id=\"maxSell\" maxlength=\"3\" min=\"0\" max=\"282000\" value=\"\" title=\"Escolha a quantidade máxima por venda\">\n            </div>\n        </label>\n    </div>\n\n\n        </div></div>\n        <style>\n\n        .container {\n            display: flex;\n            font-size: 8pt;\n            font-size: 9pt;\n            text-align: left;\n            font-weight: 700;\n            background-color: #c1a264 !important;\n            background-image: url(https://dspt.innogamescdn.com/asset/4d47dbcf/graphic/screen/tableheader_bg3.png);\n            background-repeat: repeat-x;\n            position: relative;\n        }\n\n        .inputsell {\n            width: 30%;\n            margin: 10px 0;\n            text-align: center;\n        }\n\n        label {\n            text-align: center;\n            margin-bottom: 3px;\n            font-size: 15px;\n        }\n        .align-items{\n            display: grid;\n            margin-bottom: 3px;\n            background: #f4e4bc;\n            padding: 7px;\n        }\n\n        h3 {\n           font-size: 1pt;\n        }\n\n        .btn-confirm-yes{\n            font-size: 45px;\n        }\n\n        .mbtn {\n            border: 1px solid #0080ff;\n            box-shadow: 0 0 40px 40px rgb(38 38 38) inset, inset 0px 0px 0 0 #ffffff;\n            -webkit-transition: all 150ms ease-in-out;\n            transition: all 150ms ease-in-out;\n            display: inline-block;\n            padding: 8px;\n            font-Size: 15px;\n            font-Weight: bolder;\n            cursor: pointer;\n            border-Radius: 5px;\n            margin: 3px;\n            line-Height: normal;\n        }\n        .mbtn:hover{\n            box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;\n        }\n        .inputbuy {\n            border: 1px solid #ced4da;\n            background-clip: padding-box;\n            padding: 2px 4px;\n            color: #000000;\n            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;\n            margin: 2px;\n            width: 125px;\n            font-size: 20px;\n            height: 22px;\n            background-color: #63ed55;\n            border-radius: 10px;\n            text-align: center;\n            letter-spacing: 1px;\n            font-weight: 800;\n            line-Height: normal;\n        }\n        .inputsell {\n            border: 1px solid #ced4da;\n            background-clip: padding-box;\n            padding: 2px 4px;\n            color: #000000;\n            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;\n            margin: 2px;\n            width: 125px;\n            font-size: 20px;\n            height: 22px;\n            background-color: #ff0000;\n            border-radius: 10px;\n            text-align: center;\n            letter-spacing: 1px;\n            font-weight: 800;\n        }\n        .buysell {\n            display: flex;\n        }\n        .buy {\n            display: flex;\n            flex-wrap: nowrap;\n            justify-content: flex-start;\n            align-content: flex-start;\n        }\n\n        .sell {\n            display: flex;\n            flex-wrap: nowrap;\n            justify-content: flex-start;\n            align-content: flex-start;\n        }\n        #salvar{\n            background: blue;\n        }\n        #salvar:hover{\n            box-shadow: 0 0 1px 0 #3498db inset, 0 0 10px 1px #3498db;\n        }\n\n        input.inputsell {\n            border-bottom: 1px solid black; /* adiciona uma linha preta, sólida, de 1px abaixo do elemento */\n        }\n\n        #reserveWood, #reserveStone, #reserveIron, #maxSell {\n            display: block;\n            border-bottom: 1px solid black; /* adiciona uma linha preta, sólida, de 1px abaixo do elemento */\n        }\n\n\n\n        #buywood, #buystone, #buyiron, #maxstorage, #limiteStorage, #sellwood, #sellstone, #selliron, #reserveWood, #reserveStone, #reserveIron, #maxSell, #limitPoints{\n            padding: 6px;\n        }\n\n        #buywood {\n            background: #52EC47;\n            background-image: url(https://dsxs.innogamescdn.com/asset/fd617e91/graphic/resources/wood_21x18.png);\n            background-repeat: no-repeat;\n            background-position: left;\n        }\n\n        #buystone {\n            background: #52EC47;\n            background-image: url(https://dsxs.innogamescdn.com/asset/fd617e91/graphic/resources/stone_21x18.png);\n            background-repeat: no-repeat;\n            background-position: left;\n        }\n\n        #buyiron {\n            background: #52EC47;\n            background-image: url(https://dsxs.innogamescdn.com/asset/fd617e91/graphic/resources/iron_21x18.png);\n            background-repeat: no-repeat;\n            background-position: left;\n        }\n\n        #maxstorage, #limiteStorage {\n            background: #52EC47;\n            background-image: url(https://dsxs.innogamescdn.com/asset/fd617e91/graphic/buildings/storage.png);\n            background-repeat: no-repeat;\n            background-position: left;\n        }\n\n        #sellwood, #reserveWood {\n            background: #ff0000;\n            background-image: url(https://dsxs.innogamescdn.com/asset/fd617e91/graphic/resources/wood_21x18.png);\n            background-repeat: no-repeat;\n            background-position: left;\n        }\n        #sellstone, #reserveStone {\n            background: #ff0000;\n            background-image: url(https://dsxs.innogamescdn.com/asset/fd617e91/graphic/resources/stone_21x18.png);\n            background-repeat: no-repeat;\n            background-position: left;\n        }\n        #selliron, #reserveIron {\n            background: #ff0000;\n            background-image: url(https://dsxs.innogamescdn.com/asset/fd617e91/graphic/resources/iron_21x18.png);\n            background-repeat: no-repeat;\n            background-position: left;\n        }\n        #limitPoints {\n            background: #52EC47;\n            background-image: url(https://dsbr.innogamescdn.com/asset/4d47dbcf/graphic/premium/coinbag_18x18.png);\n            background-repeat: no-repeat;\n            background-position: left;\n        }\n\n        #buywood:focus {\n           background-color: cornsilk;\n        }\n        #buystone:focus {\n           background-color: cornsilk;\n        }\n        #buyiron:focus {\n           background-color: cornsilk;\n        }\n        #maxstorage:focus {\n           background-color: cornsilk;\n        }\n        #reserveWood:focus {\n           background-color: cornsilk;\n        }\n        #reserveStone:focus {\n            background-color: cornsilk;\n        }\n         #reserveIron:focus {\n            background-color: cornsilk;\n        }\n        #sellwood:focus {\n           background-color: cornsilk;\n        }\n        #sellstone:focus {\n           background-color: cornsilk;\n        }\n        #selliron:focus {\n           background-color: cornsilk;\n        }\n        #limiteStorage {\n            width: 135px\n        }\n        #limiteStorage:focus {\n           background-color: cornsilk;\n        }\n        #salvar {\n           color: #ffbf00\n        }\n        .contact{\n            border: none;\n            width: 15px;\n        }\n        </style>\n        ";
   }
   _0x23bab4();
-  function _0xdc2ff7() {
+function _0xdc2ff7() {
     console.log("Save Settings Storage");
-    const _0x34a56f = document.querySelectorAll(".inputbuy");
-    const _0x4229bb = document.querySelectorAll(".inputsell");
-    configBuyLocalStorage = [];
-    configSellLocalStorage = [];
-    for (let _0x26608c = 0; _0x26608c < _0x34a56f.length; _0x26608c++) {
-      const _0x126a6c = parseInt(_0x34a56f[_0x26608c].value);
-      configBuyLocalStorage[[_0x26608c]] = [_0x126a6c];
-      for (let _0x5eded6 = 0; _0x5eded6 < _0x4229bb.length; _0x5eded6++) {
-        const _0x14bceb = parseInt(_0x4229bb[_0x5eded6].value);
-        configSellLocalStorage[[_0x5eded6]] = [_0x14bceb];
-      }
-    }
-    inputBuyLocalStorage = localStorage.setItem("configBuy " + game_data.village.id, JSON.stringify(configBuyLocalStorage));
-    inputSellLocalStorage = localStorage.setItem("configSell " + game_data.village.id, JSON.stringify(configSellLocalStorage));
+    const buyInputs = document.querySelectorAll(".inputbuy");
+    const sellInputs = document.querySelectorAll(".inputsell");
+
+    const configBuyLocalStorage = [];
+    const configSellLocalStorage = [];
+
+    buyInputs.forEach((input, index) => {
+        const value = parseInt(input.value);
+        configBuyLocalStorage[index] = value;
+    });
+
+    sellInputs.forEach((input, index) => {
+        const value = parseInt(input.value);
+        configSellLocalStorage[index] = value;
+    });
+
+    localStorage.setItem("configBuy " + game_data.village.id, JSON.stringify(configBuyLocalStorage));
+    localStorage.setItem("configSell " + game_data.village.id, JSON.stringify(configSellLocalStorage));
+
     UI.SuccessMessage("Atualizando a página para aplicar as configurações. Aguarde!", 3000);
-    _0x41cf1d();
-  }
-  function _0x3e7359() {
-    if (JSON.parse(localStorage.getItem("configBuy " + game_data.village.id)) !== null) {
-      console.log("Load Settings Storage");
-      const _0x17cb72 = document.querySelectorAll(".inputbuy");
-      const _0x3d8cb6 = document.querySelectorAll(".inputsell");
-      for (let _0x55a2cd = 0; _0x55a2cd < _0x17cb72.length; _0x55a2cd++) {
-        for (let _0x2f968d = 0; _0x2f968d < _0x3d8cb6.length; _0x2f968d++) {}
-      }
+    setTimeout(() => location.reload(true), 1500);
+}
+
+function _0x3e7359() {
+    const savedBuyConfig = localStorage.getItem("configBuy " + game_data.village.id);
+    const savedSellConfig = localStorage.getItem("configSell " + game_data.village.id);
+
+    if (savedBuyConfig && savedSellConfig) {
+        console.log("Load Settings Storage");
+        const buyInputs = document.querySelectorAll(".inputbuy");
+        const sellInputs = document.querySelectorAll(".inputsell");
+
+        const buyConfig = JSON.parse(savedBuyConfig);
+        const sellConfig = JSON.parse(savedSellConfig);
+
+        buyInputs.forEach((input, index) => {
+            input.value = buyConfig[index];
+        });
+
+        sellInputs.forEach((input, index) => {
+            input.value = sellConfig[index];
+        });
     }
-  }
-  _0x3e7359();
-  start = document.querySelector("#iniciar");
-  option = document.querySelector("#option");
-  vender = document.querySelector("#vender");
-  saveButton = document.querySelector("#salvar");
-  start.addEventListener("click", _0x2fdff5);
-  option.addEventListener("click", _0x2cc2d5);
-  vender.addEventListener("click", _0x1990ca);
-  saveButton.addEventListener("click", _0xdc2ff7);
+}
+
+// Event Listener for Save Button
+document.addEventListener("DOMContentLoaded", () => {
+    const saveButton = document.querySelector("#salvar");
+    if (saveButton) {
+        saveButton.addEventListener("click", _0xdc2ff7);
+    }
+    _0x3e7359();
+});
   async function _0x51b0d6() {
     if (outputStorage("ActiveMarket " + game_data.village.id) == 1) {
       start.value = "Script Ativado";
