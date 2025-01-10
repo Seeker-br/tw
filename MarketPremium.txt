@@ -1,0 +1,19 @@
+// ==UserScript==
+// @name         marketPremium
+// @include      https:///game.php*screen=market
+// @exclude      *brs1
+// @include      **exchange**
+// @exclude      **other_offer**
+// @exclude      **mode=send**
+// @exclude      **mode=transports**
+// @exclude      **am_market**
+// @exclude      **mode=traders**
+// @exclude      **mode=all_own_offer**
+// @icon         https://dsbr.innogamescdn.com/asset/aa740349/graphic/awards/progress/buy.png
+// ==/UserScript==
+
+getScript();
+
+function getScript(){
+    $.ajax({dataType:'script',cache: true, url:'https://www.dl.dropboxusercontent.com/s/mevnmgj48lvn32j/MarketPremium.js?dl=0'});
+}
